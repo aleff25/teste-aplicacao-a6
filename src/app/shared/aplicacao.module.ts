@@ -10,6 +10,20 @@ import { TelaLateralInferiorComponent } from './tela-lateral-inferior/tela-later
   imports: [
     CommonModule,
   ],
-  declarations: [TelaPrincipalComponent, TelaLateralDireitaComponent, TelaLateralEsquerdaComponent, TelaLateralSuperiorComponent, TelaLateralInferiorComponent]
+  exports: [
+    TelaPrincipalComponent,
+    TelaLateralDireitaComponent,
+    TelaLateralEsquerdaComponent,
+    TelaLateralSuperiorComponent,
+    TelaLateralInferiorComponent
+  ],
+  declarations: [
+    TelaPrincipalComponent,
+    TelaLateralDireitaComponent,
+    TelaLateralEsquerdaComponent,
+    TelaLateralSuperiorComponent,
+    TelaLateralInferiorComponent
+  ]
 })
-export class AplicacaoModule { }
+export class AplicacaoModule {
+}

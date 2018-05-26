@@ -1,3 +1,9 @@
-<p>
-  tela-lateral-superior works!
-</p>
+<div *ngIf="mostrarTelaSuperior" class="panel panel-default">
+  <div class="panel-body">
+    <div class="col-md-1" *ngFor="let botao of botoes">
+      <button (click)="clicou($event, botao)">
+        {{ botao.nome }}
+      </button>
+    </div>
+  </div>
+</div>

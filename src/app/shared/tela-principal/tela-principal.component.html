@@ -1,7 +1,23 @@
-<app-tela-lateral-superior></app-tela-lateral-superior>
+<div class="container">
 
-<app-tela-lateral-direita></app-tela-lateral-direita>
+  <header>
+    <app-tela-lateral-superior class="header" [mostrarTelaSuperior]="true"></app-tela-lateral-superior>
+  </header>
+  <div id="main">
+    <article>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+        tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+        semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </article>
+    <nav>
+      <app-tela-lateral-direita class="aside aside-1" [mostrarTelaDireita]="true"></app-tela-lateral-direita>
+    </nav>
+    <aside>
+      <app-tela-lateral-esquerda class="aside aside-2" [mostrarTelaEsquerda]="true"></app-tela-lateral-esquerda>
+    </aside>
+  </div>
+  <footer>
+    <app-tela-lateral-inferior class="footer" [mostrarTelaInferior]="true"></app-tela-lateral-inferior>
+  </footer>
 
-<app-tela-lateral-inferior></app-tela-lateral-inferior>
-
-<app-tela-lateral-esquerda></app-tela-lateral-esquerda>
+</div>

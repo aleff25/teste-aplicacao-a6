@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tela-lateral-inferior',
@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TelaLateralInferiorComponent implements OnInit {
 
-  constructor() { }
+  @Input() mostrarTelaInferior = false;
+  botoes: any;
+
+  constructor() {
+    this.botoes = [
+      { nome: 'TLI1', acao: 'O que fazer' },
+      { nome: 'TLI2', acao: 'O que fazer' },
+      { nome: 'TLI3', acao: 'O que fazer' },
+      { nome: 'TLI4', acao: 'O que fazer' },
+      { nome: 'TLI5', acao: 'O que fazer' },
+    ];
+  }
 
   ngOnInit() {
+  }
+
+  clicou(event, botao: any) {
+    console.log(event, botao);
   }
 
 }

@@ -1,3 +1,22 @@
-<div>
-  <router-outlet></router-outlet>
+
+<div class="container">
+
+  <header>
+    <app-tela-lateral-superior class="header" [mostrarTelaSuperior]="true"></app-tela-lateral-superior>
+  </header>
+  <div id="main">
+    <article>
+      <router-outlet></router-outlet>
+    </article>
+    <nav>
+      <app-tela-lateral-direita class="aside aside-1" [mostrarTelaDireita]="true"></app-tela-lateral-direita>
+    </nav>
+    <aside>
+      <app-tela-lateral-esquerda class="aside aside-2" [mostrarTelaEsquerda]="true"></app-tela-lateral-esquerda>
+    </aside>
+  </div>
+  <footer>
+    <app-tela-lateral-inferior class="footer" [mostrarTelaInferior]="true"></app-tela-lateral-inferior>
+  </footer>
+
 </div>
